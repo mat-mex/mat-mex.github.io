@@ -1,0 +1,19 @@
+html, body {
+    background-color: #fafaf5;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Panton";
+    src: url("/fonts/Panton-black.ttf");
+}
+
+.limitWidth {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
