@@ -16,6 +16,7 @@ export default function Header() {
 
 const MyHeader = styled('div')`
     box-sizing: border-box;
+    z-index: 10;
     padding: 4px;
     
     position: sticky;
@@ -23,7 +24,7 @@ const MyHeader = styled('div')`
     width: 100%;
     top: 0;
     
-    box-shadow: black 0 0 5px;
+    box-shadow: black 0 -8px 10px;
     background-color: white;
     overflow: hidden;
 `;
