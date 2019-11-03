@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react';
 import Card from '../components/Card/Card';
 import List from '../components/List/List';
+
 export default function Home() {
   return (
       <Fragment>
+        <List title="Тест">
+        </List>
         <List title="Все карточки">
           <Card color="#66cc99" icon="/icons/plus.svg" title="Калькулятор Зачетных Единиц"
                 text="Отмечайте сданные курсы, считайте баллы, планируйте"/>

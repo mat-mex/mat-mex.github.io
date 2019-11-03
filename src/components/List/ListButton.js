@@ -9,6 +9,7 @@ export default styled('button')`
     padding: 16px;
     opacity: .5;
     transition: opacity .3s;
+    visibility: ${(p) => p.display ? 'visible' : 'hidden'};
     ${(p) => p.right && 'transform: rotate(180deg)'};
     
     
