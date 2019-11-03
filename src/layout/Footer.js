@@ -13,6 +13,6 @@ const MyFooter = styled('div')`
     top: 0;
     
     overflow: hidden;
-    box-shadow: inset 0 5px 5px -5px black;
+    box-shadow: inset 0 3px 5px -5px black;
     background-color: #ddd;
 `;
