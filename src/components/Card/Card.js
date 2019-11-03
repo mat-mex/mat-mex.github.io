@@ -19,8 +19,8 @@ const MyCard = styled('div')`
     flex-shrink: 0;
     margin: 20px 10px;
     
-    height: ${60 * 3}px;
-    width: ${60 * 5}px;
+    height: ${55 * 3}px;
+    width: ${55 * 5}px;
     
     background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), ${(p) => p.color};
     box-shadow: 0 5px 10px rgba(0,0,0,.1);

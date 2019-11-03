@@ -9,7 +9,7 @@ let id = 0;
 export default function List({ children, title }) {
   id++;
   const listId = 'list-items-' + id;
-  const scroll = (direction) => sideScroll(listId, direction, 15, 320, 40);
+  const scroll = (direction) => sideScroll(listId, direction, 10, 295, 25);
   return (
       <div>
         <Title>{title}</Title>
@@ -30,6 +30,12 @@ const Items = styled('div')`
     flex: auto;
     overflow-x: scroll;
     overflow-y: hidden;
+    
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 `;
 
 function sideScroll(id, direction, speed, distance, step) {

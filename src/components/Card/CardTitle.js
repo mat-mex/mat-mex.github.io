@@ -5,6 +5,6 @@ export default styled('h3')`
     line-height: 1;
     color: white;
     
-    padding: 20px 25px;
+    padding: 20px 10px 20px 25px;
     margin: 0;
 `;
