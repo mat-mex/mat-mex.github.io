@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export default styled('button')`
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     border: none;
     background: url(${(p) => p.icon});
     background-size: cover;
-    padding: 16px;
+    box-sizing: border-box;
+    margin: 16px;
     opacity: .5;
     transition: opacity .3s;
-    visibility: ${(p) => p.display ? 'visible' : 'hidden'};
     ${(p) => p.right && 'transform: rotate(180deg)'};
     
     

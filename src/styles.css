@@ -21,6 +21,14 @@ html, body {
     src: url("/fonts/Panton-Regular.ttf");
 }
 
+:root {
+    --card-width: 250px;
+    --card-padding: 20px;
+
+    --card-icon-size: calc(var(--card-width) / 5);
+    --card-border-radius: calc(var(--card-icon-size) / 4);
+}
+
 .limitWidth {
     max-width: 900px;
     margin: 0 auto;
@@ -29,4 +37,16 @@ html, body {
 .flex {
     display: flex;
     flex-direction: row;
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border-bottom: none;
 }
