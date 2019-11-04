@@ -9,11 +9,23 @@ export default function Home() {
           <Card color="#66cccc" title="Направления Подготовки"
                 text="Куда пойти учиться? Где легче? Мнения студентов"/>
           <Card color="#6666cc" title="Калькулятор ЕГЭ" href="https://priem.urfu.ru/#/calculator-ege"
-                text="Подскажет, куда можно пройти на бюджет"/>
+                icon="/icons/sum.svg" text="Подскажет, куда можно пройти на бюджет"/>
+        </List>
+        <List title="Поступившим">
+          <Card color="#66cccc" title="Общежитие"
+                text="Где находится? Как поселиться? Правила проживания"/>
+          <Card color="#66cccc" title="Поликлиника"
+                text="Мед.осмотр, обращения по&nbsp;болезни"/>
+          <Card color="#66cccc" title="Первая сессия"
+                text="Когда начнется? Как выжить? Где взять хвостовку?"/>
         </List>
         <List title="Студентам">
+          <Card color="#ff66cc" title="Расписание пар" href="https://istudent.urfu.ru/s/schedule"
+                text="На сайте УрФУ"/>
           <Card color="#ffcc66" title="Электронные конспекты" href="https://mat-mex.github.io/old-site-with-conspects"
-                text="Записанные студентами лекции в .MD формате"/>
+                icon="/icons/book.svg" text="Записанные студентами лекции в .MD формате"/>
+          <Card color="#ffcc66" title="Что делать, если потерял студик"
+                text="К кому обращаться? Как восстановить?"/>
         </List>
         <List title="Старшим курсам">
           <Card color="#66cc99" icon="/icons/plus.svg" title="Калькулятор Зачетных Единиц"

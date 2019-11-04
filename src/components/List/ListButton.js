@@ -7,7 +7,7 @@ export default styled('button')`
     background: url(${(p) => p.icon});
     background-size: cover;
     box-sizing: border-box;
-    margin: 16px;
+    margin: 8px;
     opacity: .5;
     transition: opacity .3s;
     ${(p) => p.right && 'transform: rotate(180deg)'};

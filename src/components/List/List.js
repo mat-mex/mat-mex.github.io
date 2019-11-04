@@ -41,7 +41,7 @@ export default function List({ children, title }) {
 const Items = styled('div')`
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 0 10px;
     flex: auto;
     overflow-x: scroll;
     overflow-y: hidden;
