@@ -3,15 +3,17 @@ import styled from 'styled-components';
 import Icon from "./CardIcon";
 import Title from "./CardTitle";
 import Text from "./CardText";
+import Badge from "./CardBadge";
 
-export default function Card({ color, title, icon, text, href }) {
+export default function Card({ color, title, icon, text, href, badge }) {
     if (!href) color = '#ccc';
     return (
       <MyLink href={href}>
         <MyCard color={color}>
           <Title>{title}</Title>
           <Text>{text}</Text>
-          <Icon path={icon} color={color}/>
+          <Icon id="icon" path={icon} color={color}/>
+          {badge && <Badge id="badge" color={color}>{badge}</Badge>}
         </MyCard>
       </MyLink>
     );
@@ -42,12 +44,18 @@ const MyCard = styled('div')`
         box-shadow: 0 5px 5px rgba(0,0,0,.25);
         transform: scale(1.05);
 
-        div {
+        #icon {
             box-shadow: none;
             width: var(--card-padding);
             height: var(--card-padding);
             left: 0;
             bottom: 0;
+        }
+        
+        #badge {
+            box-shadow: none;
+            right: 0;
+            top: 0;
         }
     }
 `;
